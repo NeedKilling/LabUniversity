@@ -1,0 +1,26 @@
+# Текстовые файлы
+*.py text
+*.md text
+*.txt text
+*.json text
+*.yml text
+*.yaml text
+
+# Данные файлы - оставить как есть
+*.csv binary
+*.data binary
+*.xlsx binary
+
+# Исходный код
+*.java text
+*.cpp text
+*.h text
+*.js text
+*.html text
+*.css text
+
+# Бинарные файлы
+*.png binary
+*.jpg binary
+*.pdf binary
+*.zip binary

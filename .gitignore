@@ -1,0 +1,15 @@
+**/.venv/
+**/venv/
+**/env/
+**/ENV/
+
+# Кэш Python
+**/__pycache__/
+**/*.pyc
+**/*.pyo
+**/*.pyd
+**/.Python
+
+Файлы активации (опционально - можно добавить в репозиторий)
+**/bin/activate
+**/Scripts/activate
