@@ -487,7 +487,7 @@ plt.show()
 
 
 
-
+# Цветовая схема
 palette = {
     'BV': '#1f77b4',
     'UB': '#2ca02c', 
@@ -497,34 +497,49 @@ palette = {
     'Указанный астероид': 'blue',
     'Родительское тело': 'red'
 }
+
+# Параметры для анализа
 color_params = ['BV', 'UB', 'IR', 'albedo']
+
 fig, axes = plt.subplots(2, 2, figsize=(15, 12))
 axes = axes.flatten()
+
 for i, param in enumerate(color_params):
     if param not in df.columns:
         axes[i].text(0.5, 0.5, f'Нет данных для {param}', 
                     ha='center', va='center', transform=axes[i].transAxes, fontsize=12)
         axes[i].set_title(f'Все точки {param}', fontsize=14, fontweight='bold')
         continue
+    
     plot_data = df[[param, 'special']].dropna()
+    
     if len(plot_data) == 0:
         axes[i].text(0.5, 0.5, f'Недостаточно данных\n{param}', 
                     ha='center', va='center', transform=axes[i].transAxes, fontsize=12)
         axes[i].set_title(f'Все точки {param}', fontsize=14, fontweight='bold')
         continue
+    
+    # Множественные слои точек для максимальной видимости
+    # Слой 1: Основные точки
     sns.stripplot(data=plot_data, y=param, x=0, ax=axes[i],
                   hue='special', palette=palette, 
                   size=8, alpha=0.8, jitter=0.3)
+    
+    # Слой 2: Дополнительные точки для плотности
     sns.stripplot(data=plot_data, y=param, x=0, ax=axes[i],
                   hue='special', palette=palette, 
                   size=5, alpha=0.6, jitter=0.2, legend=False)
+    
+    # Слой 3: Еще больше точек
     sns.stripplot(data=plot_data, y=param, x=0, ax=axes[i],
                   color='black', size=3, alpha=0.3, jitter=0.15, legend=False)
+    
     axes[i].set_xlabel('')
     axes[i].set_ylabel(param, fontsize=12, fontweight='bold')
     axes[i].set_title(f'Все точки {param} (n={len(plot_data)})', fontsize=14, fontweight='bold')
     axes[i].grid(True, alpha=0.3, axis='y')
     axes[i].set_xticks([])
+
 plt.tight_layout()
 plt.suptitle('Максимальное количество точек - все цветовые параметры и альбедо', 
              fontsize=16, fontweight='bold', y=1.02)
