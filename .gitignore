@@ -2,6 +2,8 @@
 **/venv/
 **/env/
 **/ENV/
+**/.env/
+**/.env
 
 # Кэш Python
 **/__pycache__/

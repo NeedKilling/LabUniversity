@@ -8,3 +8,4 @@ with open("config.toml" , mode = "rb") as tomlConfig:
 
 WEATHER_BASE_URL = configurate["weather_url"]
 WEATHER_API_KEY = config("WEATHER_KEY")
+TELEGRAM_BOT_KEY = config("TELEGRAB_BOT_KEY")
