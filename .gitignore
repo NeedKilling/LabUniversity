@@ -4,6 +4,8 @@
 **/ENV/
 **/.env/
 **/.env
+**/.env.*
+
 
 # Кэш Python
 **/__pycache__/
