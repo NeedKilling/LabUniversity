@@ -15,19 +15,32 @@ def get_weather_by_query(city: str) -> None | tuple[Any]:
 
     weather_response = requests.get(WEATHER_BASE_URL,params = params)
     print(json.dumps(weather_response.json(), indent=4, ensure_ascii=False))
-    # try:
-    #     # Добавляем таймаут 10 секунд
-    #     weather_response = requests.get(WEATHER_BASE_URL, timeout=10,params = params)
-    #     weather_response.raise_for_status()  # Проверяем HTTP ошибки
-    #     return json.dumps(weather_response.json(), indent = 4, ensure_ascii = False)
-    # except requests.exceptions.Timeout:
-    #     print(f"Таймаут: не удалось подключиться к API за 10 секунд")
-    #     return None
-    # except requests.exceptions.ConnectionError:
-    #     print("Ошибка соединения. Проверьте интернет.")
-    #     return None
-    # except requests.exceptions.RequestException as e:
-    #     print(f"Ошибка запроса: {e}")
-    #     return None
+   
     
-   # print(json.dumps(weather_response.json(), indent = 4, ensure_ascii = False))
+# def get_weather_by_location(latitude: float, longitude: float)->str:
+     
+#      params = {
+#         "lat": latitude ,
+#         "lon": longitude,
+
+#         "appid": WEATHER_API_KEY,
+#         "units":"metric",
+#         "lang":"ru"
+#     }
+#         weather = requests.get(WEATHER_BASE_URL,params = params)
+
+def get_weather_by_location(latitude:float, longitude:float)->str:
+    params = {"lat": latitude,
+              "long": longitude,
+              "appid": WEATHER_API_KEY,
+              "units": "metric",
+              "lang": "ru"
+    }
+    weather = requests.get(WEATHER_BASE_URL, params=params)
+
+    if weather.status_code == 200:
+        temp = weather.json()["main"]["temp"]
+        description = weather.json()["weather"][0]["description"]
+
+        return f"temp: {temp} \n decs: {description}"
+    
