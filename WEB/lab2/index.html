@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Портфолио – Камардин Макар</title>
+    
+</head>
+<body>
+    
+    <header>
+        <h1>Камардин Макар <span>Web - разработчик</span></h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Главная</a></li>
+                <li><a href="#skills">Портфолио</a></li>
+                <li><a href="#about">Обо мне</a></li>
+                <li><a href="/contact.html">Контакты</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section id="home">
+            <h2>Добро пожаловать в моё портфолио!</h2>
+            <figure>
+                <img src="img/avatar.jpg" alt="Моё фото" width="300">
+            </figure>
+            <p class= "hello">Привет! Я создаю современные и удобные веб-сайты.</p>
+        </section>
+
+
+         <section id="skills">
+            <h2>Мои навыки</h2>
+            <ul>
+                <li><label>HTML5 & CSS3   <progress value="80" max="100">90%</progress></label></li>
+                <li><label>JavaScript   <progress value="65" max="100">90%</progress></label></li>
+                <li><label>React   <progress value="30" max="100">90%</progress></label></li>
+            </ul>
+        </section>
+
+        <section id="portfolio">
+            <h2>Мои проекты</h2>
+
+            <article>
+                 <h2>Мини-игра "Виселица</h2>
+                 <p>Текстовая игра,где нужно угадать слово прежде чем рисунок виселицы будет завершен</p>
+                 <img src="https://media.istockphoto.com/id/474290581/ru/%D0%B2%D0%B5%D0%BA%D1%82%D0%BE%D1%80%D0%BD%D0%B0%D1%8F/%D0%BF%D0%B0%D0%BB%D0%B0%D1%87s-%D0%BF%D0%B5%D1%82%D0%BB%D1%8F-%D0%B2%D0%B8%D1%81%D0%B5%D0%BB%D0%B8%D1%86%D1%8B.jpg?s=612x612&w=0&k=20&c=Vyrs1RZwc_zvq_q1cuHaq8YD9bcIbYrWgeALPhEkyLc=" alt="виселица" width= "200px">
+                    
+            </article>
+
+
+
+            <article>
+                <h2>'Сайт' по чтению книг</h2>
+                <p>Сайт для чтения. выполнен на fron с имитацией backend</p>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVDz4UAWmrYQwoySYRhhG5pzC_z7ucrBBe2A&s" alt="чтение" width="200px">
+                
+            </article>
+        </section>
+
+        <section id="about">
+            <h2>Обо мне</h2>
+            <div class="wrapper">
+                <article>
+                <h3>Мой путь в IT</h3>
+                <p>Начал изучать программирование в 2023 году. С тех пор увлекаюсь им и сегодня.</p>
+                
+                <details>
+                    <summary>Читать дальше...</summary>
+                    <p>Специализируюсь на фронтенд-разработке, но также, интересуюсь бекендом и микроэлектронникой.</p>
+                </details>
+            </article>
+            </div>
+            <div class="hobby">
+                <h2>Хобби</h3>
+                <div class="wrapper">
+                    <ol>
+                        <li>Микроэлектронника</li>
+                        <li>3д моделирование</li>
+                        <li>Покрас</li>
+                    </ol>
+                </div>
+            </div>
+        </section>
+
+
+    </main>
+    
+
+
+     <footer>
+        <p>&copy; 2026 Камардин Макар. Все права защищены.</p>
+        <p>
+            <a href="#home">Наверх</a> | 
+            <a href="resume.pdf" download>Скачать резюме</a> | 
+            <a href="privacy.html">Политика конфиденциальности</a>
+        </p>
+    </footer>
+    
+
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        html{
+            background-color: #ffffff;
+            padding: 0;
+            margin: 0;
+        }
+        a{
+            text-decoration: none;
+            color: #ffffff;
+        }
+
+        body {
+                font-family: Arial, sans-serif; 
+                margin: 0;
+            }
+            h1{
+                margin-top:0;
+            }
+            main{
+                max-width: 1200px;
+                margin: 0 auto;
+            }
+            header ,footer{
+                padding: 20px;
+                text-align: center;
+                background: #2b2b2b;
+                color: white;
+                list-style: none;
+            }
+            header li{
+                list-style: none;
+                display: inline-block;
+                padding-left: 15px;
+                font-size: 20px;
+            }
+
+            section {
+                padding: 20px;
+                margin: 20px auto 20px auto;
+            }
+            table { 
+                width: 100%;
+                border-collapse: collapse;
+            }
+            th, td { 
+                border: 1px solid #ddd; 
+                padding: 8px; 
+            }
+            form { 
+                max-width: 600px;
+                margin: 0 auto; 
+            }
+            label, input, textarea, select { 
+                display: block;
+                    width: 100%;
+                    margin: 0.5rem 0;
+                }
+
+            #home{
+                /* display: flex;
+                justify-content: center; */
+                display: block;
+                margin: 0 auto;
+            }
+            #home img,figure{
+                display: block;
+                margin: 0 auto;
+            }
+            #home h2{
+                width: 500px;
+                margin: 10px auto;
+            }
+            .hello{
+                width: 500px;
+                margin: 10px auto;
+            }
+
+            ol{
+                padding: 0;
+            }
+            ol>li{
+                padding: 5px;
+                font-size: 20px;
+            }
+            .wrapper{
+                margin-left: 50px;
+            }
+    </style>
+
+
+</body>
+</html>

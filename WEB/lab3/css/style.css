@@ -1,0 +1,153 @@
+body { 
+margin: 0; 
+} 
+.wrapper
+{ 
+    width: 920px; /*задаем фиксированную ширину контенту*/ 
+    margin: 0 auto; /*выравниваем блок по центру страницы*/
+} 
+.bound-top-navigation { 
+    background: #f2f2f2; 
+}
+#top-navigation { 
+    height: 28px; 
+    background: #f2f2f2; 
+    font-size: 12px; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+} 
+.date{
+    display: inline-block;
+}
+.time{
+    display: inline-block;
+    margin-left: 10px;
+}
+.navigation_block ul{
+    list-style-type: none;
+}
+.navigation_block li{
+    display: inline-block;
+    border-right: 1px solid #000; 
+    padding: 0 7px;
+
+}
+.navigation_block li:last-child{
+    border: none
+}
+.navigation_block a{
+    text-decoration: none;
+    color: #000;
+}
+
+
+
+
+/*LOGO AND MAIN MENU*/
+.logo-main-menu { 
+    height: 102px; 
+    background: khaki; 
+} 
+.logo{
+    display: inline-block;
+}
+.logo img{ 
+    width: 280px; 
+    height: 102px;
+    background: #ffb6a5; 
+} 
+
+.main-menu{
+    float: right;
+    height: 83px;
+}
+.main-menu ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    padding-top: 39px;
+}
+.main-menu li{
+    display: inline-block;
+    padding: 24px 32px 21px 32px;
+    /* background-color: #92b800; */
+    background-color: #f2f2f2;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+
+}
+.main-menu li:hover{
+    background-color: #92b800;
+    
+}
+.main-menu a{
+    text-decoration: none;
+    color: #000;
+}
+
+
+
+.bound-advertisement-content { 
+background: #f2f2f2; 
+} 
+#advertisement { 
+width: 980px; 
+height: 335px; 
+background: #8ef254; 
+} 
+/*CONTENT*/ #content { 
+height: 400px; 
+background: aquamarine; 
+clear: both; 
+}
+#block-news { width: 
+320px; height: 
+400px; background: 
+#f2af2d; 
+ float: left; /*делаем блок плавующим и прижимаем влево, следующий ПЛАВУЮЩИЙ блок 
+прижмется к нему*/
+} 
+#block-offers { 
+width: 600px; 
+height: 400px; 
+background: #8773f2; 
+ float: left; /*необходимо указать, так как этот блок является следующим за 
+плавающим (иначе он прижмется к родительскому элементу)*/
+} 
+/*FOOTER*/ .bound-footer
+{ background: 
+#e6e6e6; 
+} 
+#footer { 
+height: 296px; 
+} 
+#block-subscription { 
+width: 320px; 
+height: 296px; 
+background: #f25f68; 
+float: left; 
+} 
+#block-why-us { 
+width: 200px; 
+height: 296px; 
+background: #f2c332; 
+float: left; 
+} 
+
+#block-follow-us { 
+width: 200px; 
+height: 296px; 
+background: #94f2e5; 
+float: left; 
+} 
+#block-address { 
+width: 200px; 
+height: 296px; 
+background: #f28a22; 
+float: left; 
+} 
+.bound-below-footer { 
+height: 110px; 
+background: #454545; 
+}

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test</title>
+</head>
+
+<body>
+
+
+    <header>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/LEGO_logo.svg/960px-LEGO_logo.svg.png"
+            alt="">
+        <nav class="navigate">
+            <ul>
+                <li>one</li>
+                <li>two</li>
+                <li>three</li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="cards">
+        <div class="card_block"><img
+                src="https://static.mir-kubikov.ru/upload/iblock/1a1/jyiwhjnrzgfkomjkyy11vmbuepkjusze.png" alt=""></div>
+        <div class="card_block"><img
+                src="https://static.mir-kubikov.ru/upload/iblock/093/3ycobjidphy981p6x9t8af4npysf19xp.png" alt=""></div>
+        <div class="card_block"><img
+                src="https://static.mir-kubikov.ru/upload/iblock/cce/w0xgfia4yn1reb3mxf4571gvx3jk2hvl.jpg" alt=""></div>
+    </section>
+
+
+
+    <style>
+        body{
+            margin: 0 auto;
+        }
+        * {
+            box-sizing: border-box;
+        }
+
+        header {
+            display: flex;
+            margin-top: 20px;
+            width: 1000px;
+            height: 120px;
+            margin: 20px auto 0 auto;
+
+            box-shadow: 5px 10px 30px #8e8e8e;
+            border-radius: 15px;
+            background: linear-gradient(45deg, #a9e9f3 0%, #eda3d1 100%);
+
+            padding: 0 40px 0 40px;
+
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        img {
+            width: 100px;
+            height: 100px;
+            border-radius: 15px;
+        }
+
+        ul {
+            display: flex;
+            gap: 40px;
+            font-size: 20px;
+            padding: 0;
+            list-style: none;
+            margin: 0;
+        }
+
+        li {
+            display: flex;
+            justify-content: center;
+            background-color: azure;
+            padding: 15px;
+            width: 60px;
+            border-radius: 15px;
+            box-shadow: 5px 5px 30px #555b5c;
+        }
+
+        .cards {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+
+            margin: 40px auto 0 auto;
+            width: 1000px;
+
+            /* justify-content: space-around; */
+            box-shadow: 5px 10px 30px #8e8e8e;
+            border-radius: 15px;
+            background: linear-gradient(45deg, #eda3d1 0%, #a9e9f3 100%);
+
+            padding: 20px 40px 20px 40px;
+
+        }
+
+        .card_block {
+            height: 300px;
+            display: flex;
+            justify-content: center;
+            background-color: azure;
+            align-items: center;
+
+
+            border-radius: 15px;
+            box-shadow: 5px 5px 30px #555b5c;
+        }
+
+        .card_block:nth-child(2n+1) {
+            flex: 1;
+        }
+
+        .card_block:nth-child(2) {
+            flex: 2;
+        }
+
+        .card_block>img {
+            width: 150px;
+            height: 250px;
+        }
+
+
+
+        @media screen and (max-width:1000px) {
+            header {
+                width: 800px;
+            }
+            .cards {
+                width: 800px;
+                justify-content: space-around;
+            }
+            .card_block {
+                padding: 20px;
+            }
+            .card_block:nth-child(2n+1) {
+                flex: 0;
+            }
+            .card_block:nth-child(2) {
+                flex: 0;
+            }
+        }
+
+        @media screen and (max-width: 600px) {
+            header{
+                width: 500px;
+                padding: 5px;
+            }
+            .cards {
+                width: 400px;
+                flex-wrap: wrap;
+                margin: 20 auto 0 auto;
+            }
+
+
+
+        }
+    </style>
+
+</body>
+
+</html>
