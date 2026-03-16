@@ -13,13 +13,14 @@
     <header>
         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/LEGO_logo.svg/960px-LEGO_logo.svg.png"
             alt="">
-        <nav class="navigate">
+        
+        <button>Click</button>
             <ul>
                 <li>one</li>
                 <li>two</li>
                 <li>three</li>
             </ul>
-        </nav>
+        </nav></label>
     </header>
 
     <section class="cards">
@@ -31,9 +32,33 @@
                 src="https://static.mir-kubikov.ru/upload/iblock/cce/w0xgfia4yn1reb3mxf4571gvx3jk2hvl.jpg" alt=""></div>
     </section>
 
+    <script>
+        window.addEventListener('DOMContentLoaded', () => {
+            const menu = document.querySelector('ul'),
+            hamburger = document.querySelector('button');
+
+            hamburger.addEventListener('click', () => {
+                hamburger.classList.toggle('hamburger_active');
+                menu.classList.toggle('menu_active');
+            });
+
+            // menuItem.forEach(item => {
+            //     item.addEventListener('click', () => {
+            //         hamburger.classList.toggle('hamburger_active');
+            //         menu.classList.toggle('menu_active');
+            //     })
+            // })
+        })
+    </script>
 
 
     <style>
+        .menu_active{
+            display: flex;
+        }
+        input{
+            visibility: hidden;
+        }
         body{
             margin: 0 auto;
         }
@@ -156,7 +181,18 @@
                 flex-wrap: wrap;
                 margin: 20 auto 0 auto;
             }
+        }
 
+        @media screen and (max-width: 480px){
+            ul{
+                display: none;
+            }
+            label{
+                visibility: hidden;
+            }
+            input[type="checkbox"]:checked + label {
+                visibility: visible;
+            }
 
 
         }
