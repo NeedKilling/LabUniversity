@@ -1,6 +1,6 @@
 'use strict'
 
-console.log("fdf");
+
 function rangeJs(start, end){
     let arr = [];
     for(start; start < end; start++){
@@ -15,20 +15,20 @@ const numbers = [2,5,8,12,3];
 function transform(arr){
     let squares = [];
     for(let i = 0; i < arr.length; i++){
-        arr[i] *= arr[i];
-        squares.push(arr[i]);
+        squares.push(arr[i]**2);
     }
     
 
-    let a = 0;
     let counter = 0;
-    while(a < arr.length){
+    let sum = 0;
+    while(counter < arr.length){
+        sum+=arr[counter]
         counter++;
-        a++;
+        
     }
 
     console.log("\tarr =  "+squares);
-    console.log("\tcounter = "+counter);
+    console.log("\tsum = "+sum);
 
     return
 
@@ -38,6 +38,7 @@ console.log(`Задание 2. «Трансформация массива» \n`
 transform(numbers)
 
 
+console.log(`Задание 3. «Жизнь циклов»`)
 function drawPyramid(height){
     let str = ""
     for(let i = 0; i < height; i++){
@@ -46,7 +47,8 @@ function drawPyramid(height){
         
     }
 }
-console.log(`Задание 3. «Жизнь циклов»${drawPyramid(6)}`)
+drawPyramid(6)
+
 
 
 const students = [
@@ -67,4 +69,4 @@ function getExperienced(studentsList, minExp){
     return arr
 }
 
-console.log(`Задание 4. «Фильтрация» \n\t${getExperienced(students,5)}`)
+console.log(`Задание 4. «Фильтрация» \n\t${getExperienced(students,3)}`)
