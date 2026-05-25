@@ -69,4 +69,4 @@ function getExperienced(studentsList, minExp){
     return arr
 }
 
-console.log(`Задание 4. «Фильтрация» \n\t${getExperienced(students,3)}`)
+console.log(`Задание 4. «Фильтрация» \n\t${getExperienced(students,6)}`)

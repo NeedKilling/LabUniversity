@@ -26,7 +26,7 @@ const formatName = (lastName="", name = "")=>{
         return "Anonim";
     }
 }
-console.log(`Задание 3 ~~~ ${formatName()}`);
+console.log(`Задание 3 ~~~ ${formatName("sdsf","sdd")}`);
 
 
 const add = (a,b)=>a+b;
