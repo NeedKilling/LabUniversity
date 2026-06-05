@@ -5,7 +5,6 @@ import fs from 'fs';
 import axios from 'axios';
 
 const app = express();
-const PORT = 3000;
 
 app.use(express.json());
 app.use(express.static(path.join(import.meta.dirname,'public')));
@@ -81,7 +80,7 @@ app.get('/api/search', async (req, res) => {
 
 
 
-app.post('/api/form', (req, res) => {
+app.post('/api/form',async (req, res) => {
   const { name, email, message } = req.body;
 
   if (!email.includes('@')) {
@@ -94,26 +93,28 @@ app.post('/api/form', (req, res) => {
    const filePath = path.join(path.join(import.meta.dirname, '/public/log'), 'form.json');
 
 
-
-    let feedbacks = [];
-    if (fs.existsSync(filePath)) {
-      try {
-        const fileContent = fs.readFileSync(filePath, 'utf8');
-        feedbacks = JSON.parse(fileContent);
-      } catch (err) {
-        feedbacks = [];
-      }
-    }
-    feedbacks.push(feedbackEntry);
-
-
-  try {
-      fs.promises.writeFile(filePath, JSON.stringify(feedbacks, null, 2));
-      return res.json({ success: true, message: 'Сообщение получено.' });
-  } catch (err) {
-      return res.status(500).json({ success: false, error: 'Не удалось' });
+    try{
       
+      let feedbacks = [];
+    
+      try {
+        const fileContent = await fs.promises.readFile(filePath, 'utf8');
+          feedbacks = JSON.parse(fileContent);
+      } catch (err) {
+          feedbacks = [];
+        }
+        
+        feedbacks.push(feedbackEntry);
+
+      
+        await fs.promises.writeFile(filePath, JSON.stringify(feedbacks, null, 2));
+        return res.json({ success: true, message: 'Сообщение получено.' });
+            
+    } catch (err) {
+        return res.status(500).json({ success: false, error: 'Не удалось' });
     }
+    
+    
 
 });
 
@@ -128,6 +129,6 @@ app.post('/api/form', (req, res) => {
 
 
 
-app.listen(PORT, () => {
-  console.log(`🚀 Сервер запущен: http://localhost:${PORT}`);
+app.listen(3000, () => {
+  console.log(`🚀 Сервер запущен: http://localhost:3000`);
 });
