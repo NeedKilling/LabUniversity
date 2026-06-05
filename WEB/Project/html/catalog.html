@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Каталог</title>
+    <link rel="stylesheet" href="/css/style.min.css">
+</head>
+  <body>
+      <header>
+        <h1>Результаты поиска</h1>
+        <nav>
+          <a href="/">Главная</a>
+          <a href="/catalog" class="active">Каталог</a>
+           <a href="/top">Топ-10</a>
+          <a href="/about">О себе</a>
+         
+        </nav>
+      </header>
+
+
+      <main>
+        <form action="/catalog" method="GET" class="search-block_form">
+          <input type="text" name="q" placeholder="Например, Overlord" required>
+          <button type="submit" class="search-block_btn">Искать</button>
+        </form>
+
+        <div id="searchStatus" class="search-status"></div>
+        <div id="animeContainer" class="anime-grid">
+
+
+        </div>
+      </main>
+
+      <footer>
+        <nav>
+          <a href="/">Главная</a>
+          <a href="/catalog">Каталог</a>
+          <a href="/top">Топ-10</a>
+          <a href="/about">О себе</a>
+          
+        </nav>
+        <p>Данные предоставлены <a href="https://shikimori.io/" target="_blank">Shikimori</a></p>
+        <p class="student">Выполнил: <span>Камардин Макар</span></p>
+      </footer>
+    <script defer src="/js/scripts.js"></script>
+    
+  </body>
+</html>

@@ -1,0 +1,26 @@
+[
+  {
+    "name": "MERLIN",
+    "email": "email@email",
+    "message": "hello",
+    "date": "2026-06-04T22:43:47.159Z"
+  },
+  {
+    "name": "Makar",
+    "email": "email@email",
+    "message": "thanks",
+    "date": "2026-06-04T22:46:55.238Z"
+  },
+  {
+    "name": "dsdd",
+    "email": "email@email",
+    "message": "dsdsd",
+    "date": "2026-06-04T22:47:43.103Z"
+  },
+  {
+    "name": "test",
+    "email": "email@email",
+    "message": "test",
+    "date": "2026-06-04T22:56:17.758Z"
+  }
+]

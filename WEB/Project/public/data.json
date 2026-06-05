@@ -1,0 +1,227 @@
+[
+  {
+    "id": 5114,
+    "title": "Fullmetal Alchemist: Brotherhood",
+    "russian": "Стальной алхимик: Братство",
+    "score": 9.09,
+    "kind": "TV",
+    "episodes": 64,
+    "image": "https://shikimori.io/system/animes/original/5114.jpg"
+  },
+  {
+    "id": 30276,
+    "title": "One Punch Man",
+    "russian": "Ванпанчмен",
+    "score": 8.52,
+    "kind": "TV",
+    "episodes": 12,
+    "image": "https://shikimori.io/system/animes/original/30276.jpg"
+  },
+  {
+    "id": 11061,
+    "title": "Hunter x Hunter (2011)",
+    "russian": "Охотник x Охотник (2011)",
+    "score": 8.99,
+    "kind": "TV",
+    "episodes": 148,
+    "image": "https://shikimori.io/system/animes/original/11061.jpg"
+  },
+  {
+    "id": 16498,
+    "title": "Shingeki no Kyojin",
+    "russian": "Атака титанов",
+    "score": 8.55,
+    "kind": "TV",
+    "episodes": 25,
+    "image": "https://shikimori.io/system/animes/original/16498.jpg"
+  },
+  {
+    "id": 1535,
+    "title": "Death Note",
+    "russian": "Тетрадь смерти",
+    "score": 8.62,
+    "kind": "TV",
+    "episodes": 37,
+    "image": "https://shikimori.io/system/animes/original/1535.jpg"
+  },
+  {
+    "id": 11757,
+    "title": "Sword Art Online",
+    "russian": "Мастера меча онлайн",
+    "score": 7.25,
+    "kind": "TV",
+    "episodes": 25,
+    "image": "https://shikimori.io/system/animes/original/11757.jpg"
+  },
+  {
+    "id": 20583,
+    "title": "No Game No Life",
+    "russian": "Нет игры — нет жизни",
+    "score": 8.07,
+    "kind": "TV",
+    "episodes": 12,
+    "image": "https://shikimori.io/system/animes/original/20583.jpg"
+  },
+  {
+    "id": 22319,
+    "title": "Tokyo Ghoul",
+    "russian": "Токийский гуль",
+    "score": 7.77,
+    "kind": "TV",
+    "episodes": 12,
+    "image": "https://shikimori.io/system/animes/original/22319.jpg"
+  },
+  {
+    "id": 28977,
+    "title": "Gintama°",
+    "russian": "Гинтама°",
+    "score": 9.06,
+    "kind": "TV",
+    "episodes": 51,
+    "image": "https://shikimori.io/system/animes/original/28977.jpg"
+  },
+  {
+    "id": 20,
+    "title": "Naruto",
+    "russian": "Наруто",
+    "score": 7.83,
+    "kind": "TV",
+    "episodes": 220,
+    "image": "https://shikimori.io/system/animes/original/20.jpg"
+  },
+  {
+    "id": 1735,
+    "title": "Naruto: Shippuuden",
+    "russian": "Наруто: Ураганные хроники",
+    "score": 8.18,
+    "kind": "TV",
+    "episodes": 500,
+    "image": "https://shikimori.io/system/animes/original/1735.jpg"
+  },
+  {
+    "id": 31389,
+    "title": "Boku no Hero Academia",
+    "russian": "Моя геройская академия",
+    "score": 8.05,
+    "kind": "TV",
+    "episodes": 13,
+    "image": "https://shikimori.io/system/animes/original/31389.jpg"
+  },
+  {
+    "id": 38408,
+    "title": "Kimetsu no Yaiba",
+    "russian": "Клинок, рассекающий демонов",
+    "score": 8.51,
+    "kind": "TV",
+    "episodes": 26,
+    "image": "https://shikimori.io/system/animes/original/38408.jpg"
+  },
+  {
+    "id": 40748,
+    "title": "Jujutsu Kaisen",
+    "russian": "Магическая битва",
+    "score": 8.60,
+    "kind": "TV",
+    "episodes": 24,
+    "image": "https://shikimori.io/system/animes/original/40748.jpg"
+  },
+  {
+    "id": 40852,
+    "title": "Dr. Stone",
+    "russian": "Доктор Стоун",
+    "score": 8.28,
+    "kind": "TV",
+    "episodes": 24,
+    "image": "https://shikimori.io/system/animes/original/40852.jpg"
+  },
+  {
+    "id": 35905,
+    "title": "Yakusoku no Neverland",
+    "russian": "Обещанный Неверленд",
+    "score": 8.44,
+    "kind": "TV",
+    "episodes": 12,
+    "image": "https://shikimori.io/system/animes/original/35905.jpg"
+  },
+  {
+    "id": 39551,
+    "title": "Tate no Yuusha no Nariagari",
+    "russian": "Восхождение героя щита",
+    "score": 8.01,
+    "kind": "TV",
+    "episodes": 25,
+    "image": "https://shikimori.io/system/animes/original/39551.jpg"
+  },
+  {
+    "id": 33352,
+    "title": "Re:Zero kara Hajimeru Isekai Seikatsu",
+    "russian": "Re:Zero",
+    "score": 8.33,
+    "kind": "TV",
+    "episodes": 25,
+    "image": "https://shikimori.io/system/animes/original/33352.jpg"
+  },
+  {
+    "id": 39587,
+    "title": "Kaguya-sama wa Kokurasetai",
+    "russian": "Кагуя-сама: Любовь — это война",
+    "score": 8.36,
+    "kind": "TV",
+    "episodes": 12,
+    "image": "https://shikimori.io/system/animes/original/39587.jpg"
+  },
+  {
+    "id": 42897,
+    "title": "Horimiya",
+    "russian": "Хоримия",
+    "score": 8.23,
+    "kind": "TV",
+    "episodes": 13,
+    "image": "https://shikimori.io/system/animes/original/42897.jpg"
+  },
+  {
+    "id": 34566,
+    "title": "Houseki no Kuni",
+    "russian": "Страна самоцветов",
+    "score": 8.17,
+    "kind": "TV",
+    "episodes": 12,
+    "image": "https://shikimori.io/system/animes/original/34566.jpg"
+  },
+  {
+    "id": 36793,
+    "title": "Yuru Camp△",
+    "russian": "Лагерь на свежем воздухе",
+    "score": 8.35,
+    "kind": "TV",
+    "episodes": 12,
+    "image": "https://shikimori.io/system/animes/original/36793.jpg"
+  },
+  {
+    "id": 37430,
+    "title": "Goblin Slayer",
+    "russian": "Убийца гоблинов",
+    "score": 7.54,
+    "kind": "TV",
+    "episodes": 12,
+    "image": "https://shikimori.io/system/animes/original/37430.jpg"
+  },
+  {
+    "id": 31240,
+    "title": "ReLIFE",
+    "russian": "ReLIFE",
+    "score": 8.01,
+    "kind": "TV",
+    "episodes": 13,
+    "image": "https://shikimori.io/system/animes/original/31240.jpg"
+  },
+  {
+    "id": 41457,
+    "title": "Enen no Shouboutai",
+    "russian": "Пламенная бригада",
+    "score": 7.50,
+    "kind": "TV",
+    "episodes": 24,
+    "image": "https://shikimori.io/system/animes/original/41457.jpg"
+  }
+]

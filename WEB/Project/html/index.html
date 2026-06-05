@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Главная</title>
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+    <header>
+        <h1>Аниме поиск на основе Shikimori</h1>
+        <nav>
+            <a href="/" class="active">Главная</a>
+            <a href="/catalog">Каталог</a>
+            <a href="/top">Топ-10</a>
+            <a href="/about">О себе</a>
+            
+        </nav>
+    </header>
+  <main>
+
+    <section class="search-block">
+      <h2>Найди своё следующее аниме</h2>
+      <p>Введи название на русском, английском или японском языке.</p>
+     
+      <form action="/catalog" method="GET" class="search-block_form">
+        <input type="text" name="q" placeholder="Например, Overlord" required>
+        <button type="submit" class="search-block_btn">Искать</button>
+      </form>
+    </section>
+
+
+
+  
+  </main>
+
+  <footer>
+    <nav>
+      <a href="/">Главная</a>
+      <a href="/catalog">Каталог</a>
+      <a href="/top">Топ-10</a>
+      <a href="/about">О себе</a>
+      
+    </nav>
+
+    <p>Данные предоставлены <a href="https://shikimori.io/" target="_blank">Shikimori</a></p>
+    <p class="student">Выполнил: <span>Камардин Макар</span></p>
+
+  </footer>
+</body>
+</html>
