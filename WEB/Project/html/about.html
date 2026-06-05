@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>О себе</title>
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+    <header>
+        <h1>Аниме каталог на основе Shikimori</h1>
+        <nav>
+            <a href="/" >Главная</a>
+            <a href="/catalog">Каталог</a>
+            <a href="/top">Топ-10</a>
+            <a href="/about" class="active">О себе</a>
+            
+        </nav>
+    </header>
+
+
+
+    <main>
+
+        <div class="wrapper">
+            <section class="about">
+                <h2>Немного обо мне</h2>
+                <p class="info">Я Камардин Макар, студент Московского технологического института, 3 курса, группы ОКБП-301итмп</p>
+            </section>
+
+            <section class="about">
+                <h3>Цели проекта</h3>
+                <p>Продемонстрировать клиент-серверное взаимодействие, использование внешнего API и работы с файлами .json.</p>
+            </section>
+
+            <section class="about">
+                <div class="card">
+                    <h3>Используемые инструменты</h3>
+                    <ul>
+                        <li>HTML, CSS, SCSS, JavaScript</li>
+                        <li>Node.js / Express</li>
+                        <li>Работа с API (Shikimori)</li>
+                        <li>Git / GitHub</li>
+                    </ul>
+                </div>
+            </section>
+
+            
+
+            <section class="feedback-form-container about">
+                <h3>✉️ Форма обратной связи</h3>
+                <form id="feedbackForm" class="form">
+                    <div class="form-group">
+                        <label for="name">Ваше имя:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                        <div class="form-group">
+                        <label for="message">Сообщение:</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn">Отправить</button>
+                    <div id="formStatus" class="form-status"></div>
+                </form>
+            </section>
+        </div>
+
+    </main>
+
+
+    <footer>
+        <nav>
+            <a href="/">Главная</a>
+            <a href="/catalog">Каталог</a>
+            <a href="/top">Топ-10</a>
+            <a href="/about">О себе</a>
+            
+        </nav>
+
+        <p>Данные предоставлены <a href="https://shikimori.io/" target="_blank">Shikimori</a></p>
+        <p class="student">Выполнил: <span>Камардин Макар</span></p>
+
+  </footer>
+  <script defer src="/js/form.js"></script>
+</body>
+</html>
