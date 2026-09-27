@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% block title %}{{ heading }} · Todo List{% endblock %}
+{% block container_class %} container--form{% endblock %}
+{% block content %}
+  <section class="form-card">
+    <div class="form-head">
+      <div>
+        <p class="eyebrow">{% if task %}Задача №{{ task.id }}{% else %}Новая запись{% endif %}</p>
+        <h1>{{ heading }}</h1>
+        <p class="form-lead">{% if task %}Измените детали задачи или её текущий статус.{% else %}Запишите дело, которое важно не забыть.{% endif %}</p>
+      </div>
+      <span class="form-badge {% if task %}{{ 'done' if task.is_completed else 'open' }}{% else %}draft{% endif %}">{% if task %}{{ '✓ Выполнено' if task.is_completed else '◯ В работе' }}{% else %}✛ Новое дело{% endif %}</span>
+    </div>
+    <form method="post" novalidate>{{ form.hidden_tag() }}
+      <div class="field">{{ form.title.label }}{{ form.title(autofocus=true, maxlength=200, placeholder='Например: созвон с командой в 15:00') }}{% for error in form.title.errors %}<p class="error">{{ error }}</p>{% endfor %}</div>
+      <div class="field">{{ form.description.label }}{{ form.description(rows=4, maxlength=1000, placeholder='Добавьте детали, чек-лист или важный контекст…') }}{% for error in form.description.errors %}<p class="error">{{ error }}</p>{% endfor %}</div>
+      <div class="field">{{ form.due_date.label }}{{ form.due_date }}{% for error in form.due_date.errors %}<p class="error">{{ error }}</p>{% endfor %}</div>
+      <fieldset class="field priority-picker"><legend>{{ form.priority.label.text }}</legend><div class="priority-options">{% for option in form.priority %}<label class="priority-option priority-choice-{{ option.data }}">{{ option }}<span><b>{{ option.label.text }}</b><small>{% if option.data == 1 %}Срочные и важные дела{% elif option.data == 2 %}Обычный темп работы{% else %}Можно выполнить позже{% endif %}</small></span></label>{% endfor %}</div>{% for error in form.priority.errors %}<p class="error">{{ error }}</p>{% endfor %}</fieldset>
+      <div class="form-actions">{{ form.submit(class_='button', value='Сохранить изменения' if task else 'Добавить задачу') }} <a class="cancel" href="{{ url_for('tasks.index') }}">Отмена</a></div>
+    </form>
+    {% if task %}<div class="detail-actions"><form method="post" action="{{ url_for('tasks.toggle_task', task_id=task.id) }}"><input type="hidden" name="csrf_token" value="{{ csrf_token() }}"><button class="button secondary" type="submit">{{ 'Вернуть в работу' if task.is_completed else 'Отметить выполненной' }}</button></form><form method="post" action="{{ url_for('tasks.delete_task', task_id=task.id) }}" onsubmit="return confirm('Удалить задачу №{{ task.id }}?');"><input type="hidden" name="csrf_token" value="{{ csrf_token() }}"><button class="link-button danger" type="submit">Удалить задачу</button></form></div>{% endif %}
+  </section>
+{% endblock %}

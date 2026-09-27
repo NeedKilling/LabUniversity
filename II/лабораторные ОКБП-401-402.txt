@@ -1,0 +1,29 @@
+лабораторные в колаб 
+повторение 1.
+ https://colab.research.google.com/drive/1QNrCTCPys55Ge5yOhtOKdXxNz3jM-USR?usp=sharing
+
+повторение 2
+https://colab.research.google.com/drive/1RahIM3LEBTrHvPLOtBXTdWFE_qblh0Sl?usp=sharing
+
+лабораторные в колаб на оценку
+1.отзывы
+ https://colab.research.google.com/drive/1Yle2--6eJ71_DA5YuY5qBXRwZtrR93P1?usp=sharing
+
+2. работа с текстом
+https://colab.research.google.com/drive/1rM_mh60iGDGreT7bF5gEutD9n3pVPxPr?usp=sharing
+
+3.отток клиентов
+https://colab.research.google.com/drive/1pjn4zf4P3bfgH8_UbI8eRm4Ry8ST--lk?usp=sharing
+
+4 генерация изображений
+https://colab.research.google.com/drive/1kt8W0u9izD0Bwb0vyy-osvaGhupgAVVM?usp=sharing
+
+5-6. вероятностные и обобщенно-регрессионные сети
+https://colab.research.google.com/drive/1MI3K44KNcQvMgnGCXOZS7NWlgBuQHyRO?usp=sharing 
+
+7-8 шумы и работа с видео
+https://colab.research.google.com/drive/1gt7bRYvGvZg1TpQJAmWWarLAe8NFw1qB?usp=sharing
+
+лабораторные в кагл
+1. предсказание данных
+ https://www.kaggle.com/code/annakull8768/notebook7ea51dac1e

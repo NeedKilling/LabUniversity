@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{% block title %}Todo List{% endblock %}</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/app.css') }}">
+  </head>
+  <body>
+    <div class="app-shell">
+      <aside class="sidebar">
+        <a class="brand" href="{{ url_for('tasks.home') }}" aria-label="To-Do — главная">
+          <img class="brand-logo" src="{{ url_for('static', filename='img/logo.jpg') }}" alt="To-Do">
+          <span>To-Do</span>
+        </a>
+        <nav class="side-nav" aria-label="Основное меню">
+          <a class="nav-pill {% if request.endpoint == 'tasks.home' %}active{% endif %}" href="{{ url_for('tasks.home') }}"><span>⌂</span> Home</a>
+          <a class="nav-pill {% if request.endpoint == 'tasks.index' %}active{% endif %}" href="{{ url_for('tasks.index') }}"><span>☷</span> Все задачи</a>
+          <a class="nav-pill {% if request.endpoint == 'tasks.dashboard' %}active{% endif %}" href="{{ url_for('tasks.dashboard') }}"><span>◈</span> Дашборд</a>
+        </nav>
+        {% if total is defined %}<section class="sidebar-progress"><p>Ваш прогресс</p><strong>{{ completed }} из {{ total }}</strong><div class="progress-track"><i style="width: {{ (completed / total * 100) if total else 0 }}%"></i></div><small>{{ total - completed }} осталось</small></section>{% endif %}
+      </aside>
+      <div class="page-area"><main class="container{% block container_class %}{% endblock %}">
+        {% with messages = get_flashed_messages(with_categories=true) %}{% for category, message in messages %}<div class="flash {{ category }}">{{ message }}</div>{% endfor %}{% endwith %}
+        {% block content %}{% endblock %}
+      </main></div>
+    </div>
+    {% block scripts %}{% endblock %}
+  </body>
+</html>
